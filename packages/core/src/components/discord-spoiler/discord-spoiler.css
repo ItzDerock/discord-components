@@ -16,11 +16,11 @@
 	background-color: rgba(185, 187, 190, 0.8);
 }
 
-.discord-message .discord-message-body .discord-spoiler:active {
+.discord-message .discord-message-body .discord-spoiler--revealed {
 	color: inherit;
 	background-color: hsla(0, 0%, 100%, 0.1);
 }
 
-.discord-light-theme .discord-message .discord-message-body .discord-spoiler:active {
+.discord-light-theme .discord-message .discord-message-body .discord-spoiler--revealed {
 	background-color: rgba(0, 0, 0, 0.1);
 }
