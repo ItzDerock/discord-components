@@ -65,5 +65,8 @@
 		}
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.2.3"
+	"packageManager": "yarn@3.2.3",
+	"dependencies": {
+		"@stencil/core": "^2.9.0"
+	}
 }

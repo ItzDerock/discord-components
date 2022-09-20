@@ -55,6 +55,10 @@ export namespace Components {
          */
         "url": string;
     }
+    interface DiscordCodeBlock {
+        "code": string;
+        "language"?: string;
+    }
     interface DiscordCommand {
         /**
           * The message author's username.
@@ -505,6 +509,12 @@ declare global {
         prototype: HTMLDiscordButtonElement;
         new (): HTMLDiscordButtonElement;
     };
+    interface HTMLDiscordCodeBlockElement extends Components.DiscordCodeBlock, HTMLStencilElement {
+    }
+    var HTMLDiscordCodeBlockElement: {
+        prototype: HTMLDiscordCodeBlockElement;
+        new (): HTMLDiscordCodeBlockElement;
+    };
     interface HTMLDiscordCommandElement extends Components.DiscordCommand, HTMLStencilElement {
     }
     var HTMLDiscordCommandElement: {
@@ -655,6 +665,7 @@ declare global {
         "discord-attachments": HTMLDiscordAttachmentsElement;
         "discord-bold": HTMLDiscordBoldElement;
         "discord-button": HTMLDiscordButtonElement;
+        "discord-code-block": HTMLDiscordCodeBlockElement;
         "discord-command": HTMLDiscordCommandElement;
         "discord-custom-emoji": HTMLDiscordCustomEmojiElement;
         "discord-embed": HTMLDiscordEmbedElement;
@@ -729,6 +740,10 @@ declare namespace LocalJSX {
           * The URL for the button. Setting this will force the button type to be `secondary`.
          */
         "url"?: string;
+    }
+    interface DiscordCodeBlock {
+        "code"?: string;
+        "language"?: string;
     }
     interface DiscordCommand {
         /**
@@ -1154,6 +1169,7 @@ declare namespace LocalJSX {
         "discord-attachments": DiscordAttachments;
         "discord-bold": DiscordBold;
         "discord-button": DiscordButton;
+        "discord-code-block": DiscordCodeBlock;
         "discord-command": DiscordCommand;
         "discord-custom-emoji": DiscordCustomEmoji;
         "discord-embed": DiscordEmbed;
@@ -1189,6 +1205,7 @@ declare module "@stencil/core" {
             "discord-attachments": LocalJSX.DiscordAttachments & JSXBase.HTMLAttributes<HTMLDiscordAttachmentsElement>;
             "discord-bold": LocalJSX.DiscordBold & JSXBase.HTMLAttributes<HTMLDiscordBoldElement>;
             "discord-button": LocalJSX.DiscordButton & JSXBase.HTMLAttributes<HTMLDiscordButtonElement>;
+            "discord-code-block": LocalJSX.DiscordCodeBlock & JSXBase.HTMLAttributes<HTMLDiscordCodeBlockElement>;
             "discord-command": LocalJSX.DiscordCommand & JSXBase.HTMLAttributes<HTMLDiscordCommandElement>;
             "discord-custom-emoji": LocalJSX.DiscordCustomEmoji & JSXBase.HTMLAttributes<HTMLDiscordCustomEmojiElement>;
             "discord-embed": LocalJSX.DiscordEmbed & JSXBase.HTMLAttributes<HTMLDiscordEmbedElement>;

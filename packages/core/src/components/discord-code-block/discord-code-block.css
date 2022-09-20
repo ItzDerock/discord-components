@@ -1,0 +1,21 @@
+/*  .discord-message .discord-message-body .discord-spoiler */
+
+.discord-code-block-pre {
+  background-color: #2f3136;
+  font-family: "Consolas", "Courier New", Courier, monospace;
+  margin-top: 0.25rem;
+}
+
+.discord-code-block-pre--multiline {
+  margin-top: 0.25em;
+  padding: .5em;
+  border: 1px solid #202225;
+  border-radius: 4px;
+  color: #b9bbbe;
+  font-size: 0.875rem;
+}
+
+.discord-code-block-pre--multiline.hljs {
+  background-color: #2f3136;
+  color: #b9bbbe;
+}

@@ -1,0 +1,59 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@sapphire/ts-config': ^3.3.4
+  '@stencil/core': ^2.18.0
+  clsx: ^1.2.1
+  hex-to-rgba: ^2.0.1
+  highlight.js: ^11.6.0
+  tslib: ^2.4.0
+
+dependencies:
+  '@stencil/core': 2.18.0
+  clsx: 1.2.1
+  hex-to-rgba: 2.0.1
+  highlight.js: 11.6.0
+
+devDependencies:
+  '@sapphire/ts-config': 3.3.4
+  tslib: 2.4.0
+
+packages:
+
+  /@sapphire/ts-config/3.3.4:
+    resolution: {integrity: sha512-mWEUxCXh3cHKI7C8HJ049exVTMNaq+A/lJEDfM5ENSQ/OOZHd5DdmXn2jrYqFWbTRCHa0Vp2FAmACWBwePsBtg==}
+    engines: {node: '>=v16.0.0', npm: '>=8.0.0'}
+    dependencies:
+      tslib: 2.4.0
+      typescript: 4.8.3
+    dev: true
+
+  /@stencil/core/2.18.0:
+    resolution: {integrity: sha512-NLEY8Jq59smyiivBAxHKipsp9YkkW/K/Vm90zAyXQqukb12i2SFucWHJ1Ik7ropVlhmMVvigyxXgRfQ9quIqtg==}
+    engines: {node: '>=12.10.0', npm: '>=6.0.0'}
+    hasBin: true
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /hex-to-rgba/2.0.1:
+    resolution: {integrity: sha512-5XqPJBpsEUMsseJUi2w2Hl7cHFFi3+OO10M2pzAvKB1zL6fc+koGMhmBqoDOCB4GemiRM/zvDMRIhVw6EkB8dQ==}
+    dev: false
+
+  /highlight.js/11.6.0:
+    resolution: {integrity: sha512-ig1eqDzJaB0pqEvlPVIpSSyMaO92bH1N2rJpLMN/nX396wTpDA4Eq0uK+7I/2XG17pFaaKE0kjV/XPeGt7Evjw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: true
+
+  /typescript/4.8.3:
+    resolution: {integrity: sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true

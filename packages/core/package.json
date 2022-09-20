@@ -45,7 +45,8 @@
 	"dependencies": {
 		"@stencil/core": "^2.18.0",
 		"clsx": "^1.2.1",
-		"hex-to-rgba": "^2.0.1"
+		"hex-to-rgba": "^2.0.1",
+		"highlight.js": "^11.6.0"
 	},
 	"directories": {
 		"lib": "src"
@@ -77,5 +78,9 @@
 		"components",
 		"webcomponents",
 		"stencil"
-	]
+	],
+	"devDependencies": {
+		"@sapphire/ts-config": "^3.3.4",
+		"tslib": "^2.4.0"
+	}
 }

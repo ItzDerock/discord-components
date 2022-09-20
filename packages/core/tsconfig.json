@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"rootDir": "src",
 		"outDir": "dist",
-		"jsxFactory": "h"
+		"jsxFactory": "h",
+		"experimentalDecorators": true
 	},
 	"include": ["src"]
 }
