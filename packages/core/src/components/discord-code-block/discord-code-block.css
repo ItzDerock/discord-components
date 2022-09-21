@@ -4,9 +4,12 @@
   background-color: #2f3136;
   font-family: "Consolas", "Courier New", Courier, monospace;
   margin-top: 0.25rem;
+  white-space: pre-wrap;
 }
 
 .discord-code-block-pre--multiline {
+  display: block;
+  margin-bottom: 0.5rem;
   margin-top: 0.25em;
   padding: .5em;
   border: 1px solid #202225;

@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property      | Attribute      | Description                                                                                                                            | Type     | Default     |
@@ -17,6 +18,7 @@
 | `url`         | `url`          | The URL to open when you click on the embed title.                                                                                     | `string` | `undefined` |
 | `video`       | `video`        | The embed video to use (displayed at the bottom, same slot as the image).                                                              | `string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

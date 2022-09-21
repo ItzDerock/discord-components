@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property     | Attribute     | Description                                                                                                                   | Type                     | Default      |
@@ -22,6 +23,7 @@
 | `twentyFour` | `twenty-four` | Whether to use 24-hour format for the timestamp.                                                                              | `boolean`                | `false`      |
 | `verified`   | `verified`    | Whether the bot is verified or not. Only works if `bot` is `true`                                                             | `boolean`                | `false`      |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

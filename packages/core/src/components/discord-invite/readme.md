@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property      | Attribute      | Description                                                                          | Type                  | Default                                  |
@@ -16,6 +17,7 @@
 | `url`         | `url`          | The URL to open when you click on the join button.                                   | `string`              | `undefined`                              |
 | `verified`    | `verified`     | Whether the server is verified. Only works if `partnered` is `false` or `undefined`. | `boolean`             | `false`                                  |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
