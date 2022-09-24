@@ -8,7 +8,7 @@ module.exports = {
 		resolve(__dirname, '../dist/esm/index*.js'),
 		resolve(__dirname, '../dist/esm/polyfills/index.js'),
 		resolve(__dirname, '../dist/esm/polyfills/system.js'),
-		resolve(__dirname, '../dist/skyra-discord-components-core/p*.js')
+		resolve(__dirname, '../dist/derockdev-discord-components-core/p*.js')
 	],
 	quiet: true
 };

@@ -1,6 +1,6 @@
 {
 	"name": "@derockdev/discord-components-core",
-	"version": "3.4.2",
+	"version": "3.4.3",
 	"description": "Web components to easily build and display fake Discord messages on your webpages.",
 	"author": "@derock",
 	"license": "MIT",
