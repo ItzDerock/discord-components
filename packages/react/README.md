@@ -1,3 +1,11 @@
+# `@derockdev/discord-components-react`
+A fork of [@skyra/discord-components-react](https://github.com/skyra-project/discord-components) designed for use in [discord-html-transcripts](https://github.com/itzderock/discord-html-transcripts)
+
+## Changes
+- Adds all the new components in `@derockdev/discord-components-core`
+
+## Original README
+
 <div align="center">
 
 # @skyra/discord-components-react

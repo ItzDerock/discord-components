@@ -1,6 +1,15 @@
-<div align="center">
+# `@derockdev/discord-components-core`
+A fork of [@skyra/discord-components-core](https://github.com/skyra-project/discord-components) designed for use in [discord-html-transcripts](https://github.com/itzderock/discord-html-transcripts)
 
-# @skyra/discord-components-core
+## Changes
+- Adds `<discord-code-block>`
+- Adds `<discord-header>`
+- Adds better support in `<discord-attachment>`
+	- Adds support for generic attachments, videos, and audio
+
+## Original README:
+
+<div align="center">
 
 **Web components to easily build and display fake Discord messages on your webpages**
 

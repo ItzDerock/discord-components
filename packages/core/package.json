@@ -1,6 +1,6 @@
 {
 	"name": "@derockdev/discord-components-core",
-	"version": "3.4.1",
+	"version": "3.4.2",
 	"description": "Web components to easily build and display fake Discord messages on your webpages.",
 	"author": "@derock",
 	"license": "MIT",
@@ -9,7 +9,7 @@
 	"es2015": "dist/esm/index.js",
 	"es2017": "dist/esm/index.js",
 	"types": "dist/types/index.d.ts",
-	"unpkg": "dist/derock-discord-components-core/derock-discord-components-core.esm.js",
+	"unpkg": "dist/derockdev-discord-components-core/derockdev-discord-components-core.esm.js",
 	"collection:main": "dist/collection/index.js",
 	"collection": "dist/collection/collection-manifest.json",
 	"exports": {
@@ -31,8 +31,8 @@
 	"sideEffects": [
 		"./loader/index.js",
 		"./loader/index.cjs.js",
-		"./dist/derock-discord-components-core/p-*",
-		"**/*derock-discord-components-core*.js",
+		"./dist/derockdev-discord-components-core/p-*",
+		"**/*derockdev-discord-components-core*.js",
 		"./dist/esm/loader.js",
 		"./dist/esm/polyfills/*"
 	],
