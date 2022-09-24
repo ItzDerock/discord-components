@@ -17,3 +17,63 @@
 	overflow: hidden;
 	border-radius: 3px;
 }
+
+.discord-attachment-generic {
+	display: flex;
+	width: auto;
+	max-width: 520px;
+	height: 40px;
+	padding: 10px;
+	background-color: #2f3136;
+	border: 1px solid #292b2f;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.discord-attachment-generic-icon {
+	float: left;
+	height: 100%;
+	width: auto;
+}
+
+.discord-attachment-generic-icon > svg {
+	width: 30px;
+	height: 100%;
+	margin-right: 10px;
+}
+
+.discord-attachment-generic-inner {
+	flex-grow: 1;
+	width: fit-content;
+	height: 100%;
+}
+
+.discord-attachment-generic-size {
+	color: #72767d;
+	font-size: 12px;
+	align-items: flex-start;
+	line-height: 100%;
+}
+
+.discord-attachment-generic-name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: fit-content;
+}
+
+.discord-attachment-generic-download {
+	float: right;
+	height: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.discord-attachment-generic-download > a > svg {
+	height: 100%;
+	color: rgb(185, 187, 190);
+}
+
+.discord-attachment-generic-download > a > svg:hover {
+	color: rgb(220, 221, 222);
+}

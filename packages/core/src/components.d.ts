@@ -14,11 +14,19 @@ export namespace Components {
           * The alt text to show in case the image was unable to load
           * @default 'discord attachment'
          */
-        "alt": string;
+        "alt"?: string | undefined;
         /**
           * The height of the image in pixels
          */
-        "height": number;
+        "height"?: number;
+        /**
+          * The size of the file.
+         */
+        "size": string;
+        /**
+          * The type of file the attachment is. 'image' | 'video' | 'audio' | 'file'
+         */
+        "type": 'image' | 'video' | 'audio' | 'file';
         /**
           * The URL for the image attachment
           * @important Should be a valid image URL, i.e. matching the regex `/\.(bmp|jpe?g|png|gif|webp|tiff)$/i`
@@ -27,7 +35,7 @@ export namespace Components {
         /**
           * The width of the image in pixels
          */
-        "width": number;
+        "width"?: number;
     }
     interface DiscordAttachments {
     }
@@ -56,7 +64,13 @@ export namespace Components {
         "url": string;
     }
     interface DiscordCodeBlock {
+        /**
+          * The code to display.
+         */
         "code": string;
+        /**
+          * The language of the code block.
+         */
         "language"?: string;
     }
     interface DiscordCommand {
@@ -173,6 +187,20 @@ export namespace Components {
           * The timestamp to use for the message date. When supplying a string, the format must be `01/31/2000`.
          */
         "timestamp"?: DiscordTimestamp;
+    }
+    interface DiscordHeader {
+        /**
+          * The name of the channel
+         */
+        "channel": string;
+        /**
+          * The guild name
+         */
+        "guild": string;
+        /**
+          * The icon to display.
+         */
+        "icon"?: string;
     }
     interface DiscordInlineCode {
     }
@@ -557,6 +585,12 @@ declare global {
         prototype: HTMLDiscordEmbedFooterElement;
         new (): HTMLDiscordEmbedFooterElement;
     };
+    interface HTMLDiscordHeaderElement extends Components.DiscordHeader, HTMLStencilElement {
+    }
+    var HTMLDiscordHeaderElement: {
+        prototype: HTMLDiscordHeaderElement;
+        new (): HTMLDiscordHeaderElement;
+    };
     interface HTMLDiscordInlineCodeElement extends Components.DiscordInlineCode, HTMLStencilElement {
     }
     var HTMLDiscordInlineCodeElement: {
@@ -673,6 +707,7 @@ declare global {
         "discord-embed-field": HTMLDiscordEmbedFieldElement;
         "discord-embed-fields": HTMLDiscordEmbedFieldsElement;
         "discord-embed-footer": HTMLDiscordEmbedFooterElement;
+        "discord-header": HTMLDiscordHeaderElement;
         "discord-inline-code": HTMLDiscordInlineCodeElement;
         "discord-invite": HTMLDiscordInviteElement;
         "discord-italic": HTMLDiscordItalicElement;
@@ -700,11 +735,19 @@ declare namespace LocalJSX {
           * The alt text to show in case the image was unable to load
           * @default 'discord attachment'
          */
-        "alt"?: string;
+        "alt"?: string | undefined;
         /**
           * The height of the image in pixels
          */
         "height"?: number;
+        /**
+          * The size of the file.
+         */
+        "size"?: string;
+        /**
+          * The type of file the attachment is. 'image' | 'video' | 'audio' | 'file'
+         */
+        "type"?: 'image' | 'video' | 'audio' | 'file';
         /**
           * The URL for the image attachment
           * @important Should be a valid image URL, i.e. matching the regex `/\.(bmp|jpe?g|png|gif|webp|tiff)$/i`
@@ -742,7 +785,13 @@ declare namespace LocalJSX {
         "url"?: string;
     }
     interface DiscordCodeBlock {
+        /**
+          * The code to display.
+         */
         "code"?: string;
+        /**
+          * The language of the code block.
+         */
         "language"?: string;
     }
     interface DiscordCommand {
@@ -859,6 +908,20 @@ declare namespace LocalJSX {
           * The timestamp to use for the message date. When supplying a string, the format must be `01/31/2000`.
          */
         "timestamp"?: DiscordTimestamp;
+    }
+    interface DiscordHeader {
+        /**
+          * The name of the channel
+         */
+        "channel"?: string;
+        /**
+          * The guild name
+         */
+        "guild"?: string;
+        /**
+          * The icon to display.
+         */
+        "icon"?: string;
     }
     interface DiscordInlineCode {
     }
@@ -1177,6 +1240,7 @@ declare namespace LocalJSX {
         "discord-embed-field": DiscordEmbedField;
         "discord-embed-fields": DiscordEmbedFields;
         "discord-embed-footer": DiscordEmbedFooter;
+        "discord-header": DiscordHeader;
         "discord-inline-code": DiscordInlineCode;
         "discord-invite": DiscordInvite;
         "discord-italic": DiscordItalic;
@@ -1213,6 +1277,7 @@ declare module "@stencil/core" {
             "discord-embed-field": LocalJSX.DiscordEmbedField & JSXBase.HTMLAttributes<HTMLDiscordEmbedFieldElement>;
             "discord-embed-fields": LocalJSX.DiscordEmbedFields & JSXBase.HTMLAttributes<HTMLDiscordEmbedFieldsElement>;
             "discord-embed-footer": LocalJSX.DiscordEmbedFooter & JSXBase.HTMLAttributes<HTMLDiscordEmbedFooterElement>;
+            "discord-header": LocalJSX.DiscordHeader & JSXBase.HTMLAttributes<HTMLDiscordHeaderElement>;
             "discord-inline-code": LocalJSX.DiscordInlineCode & JSXBase.HTMLAttributes<HTMLDiscordInlineCodeElement>;
             "discord-invite": LocalJSX.DiscordInvite & JSXBase.HTMLAttributes<HTMLDiscordInviteElement>;
             "discord-italic": LocalJSX.DiscordItalic & JSXBase.HTMLAttributes<HTMLDiscordItalicElement>;

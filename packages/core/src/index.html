@@ -85,8 +85,8 @@
 				}
 			};
 		</script>
-		<script type="module" src="/build/skyra-discord-components-core.esm.js"></script>
-		<script nomodule src="/build/skyra-discord-components-core.js"></script>
+		<script type="module" src="/build/derockdev-discord-components-core.esm.js"></script>
+		<script nomodule src="/build/derockdev-discord-components-core.js"></script>
 	</head>
 	<body>
 		<div>
@@ -97,6 +97,12 @@
 			<main>
 				<h3 class="title">A normal conversation</h3>
 				<discord-messages>
+					<discord-header guild="test" channel="general" icon="https://cdn.discordapp.com/icons/553346295163781120/5df9ce4ddd97985e6d27b57b8a6f50bd.webp?size=128">
+						test
+					</discord-header>
+					<discord-header guild="test server" channel="general">
+						channel topic markdown will go here
+					</discord-header>
 					<discord-message author="Alyx Vargas"> Hey guys, I'm new here! Glad to be able to join you all! </discord-message>
 					<discord-message author="Fenton Smart" avatar="/static/avafive.png"> Hi, I'm new here too! </discord-message>
 					<discord-message profile="maximillian">
@@ -114,13 +120,33 @@
 						I'm doing well, <discord-mention>Willard Walton</discord-mention>. What about yourself?
 					</discord-message>
 					<discord-message profile="willard"> s!8ball How am I doing today? </discord-message>
-					<discord-message profile="skyra"> Yes. </discord-message>
+					<discord-message profile="skyra">
+						Yes. 
+						<discord-attachments slot="attachments">
+							<discord-attachment
+								type="file"
+								alt="test file"
+								url="/static/testfile.png"
+								size="1.2 MB"
+							/>
+						</discord-attachments>
+					</discord-message>
 					<discord-message
 						profile="skyra"
 					>
+						asdf
 						<discord-code-block
 							code="const test = 'asdf'; console.log(test);"
-						/>
+							language="javascript"
+						></discord-code-block>
+
+						<discord-attachments slot="attachments">
+							<discord-attachment
+								type="file"
+								alt="test file"
+								url="/static/testfile.png"
+							/>
+						</discord-attachments>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Light mode</h3>

@@ -22,3 +22,6 @@
   background-color: #2f3136;
   color: #b9bbbe;
 }
+
+/* I dont know what theme discord uses, but i thought this was close enough */
+@import '~highlight.js/styles/base16/helios.css';

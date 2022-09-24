@@ -2,13 +2,13 @@ import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
-	namespace: 'skyra-discord-components-core',
+	namespace: 'derockdev-discord-components-core',
 	extras: {
 		experimentalImportInjection: true
 	},
 	outputTargets: [
 		reactOutputTarget({
-			componentCorePackage: '@skyra/discord-components-core',
+			componentCorePackage: '@derockdev/discord-components-core',
 			proxiesFile: '../react/src/index.ts',
 			includeDefineCustomElements: true,
 			includePolyfills: false

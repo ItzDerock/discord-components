@@ -28,10 +28,4 @@ export const handleTimestamp = (value: DiscordTimestamp, useTime = false, hour24
 	return useTime ? formatTime(value, hour24) : formatDate(value);
 };
 
-export const IMAGE_EXTENSION = /\.(bmp|jpe?g|png|gif|webp|tiff)$/i;
-
-export const validateImageExtension = (url: string) => {
-	if (!IMAGE_EXTENSION.test(url)) throw new Error(`The url of an image for discord-attachment should match the regex ${IMAGE_EXTENSION}`);
-};
-
 export const getGlobalEmojiUrl = (emojiName: string): Emoji | undefined => window.$discordMessage?.emojis?.[emojiName];

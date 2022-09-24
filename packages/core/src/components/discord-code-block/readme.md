@@ -1,4 +1,4 @@
-# discord-code-block
+# discord-channel-header
 
 
 
@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                  | Default     |
-| ---------- | ---------- | ----------- | --------------------- | ----------- |
-| `code`     | `code`     |             | `string`              | `undefined` |
-| `language` | `language` |             | `string \| undefined` | `undefined` |
+| Property   | Attribute  | Description                     | Type                  | Default     |
+| ---------- | ---------- | ------------------------------- | --------------------- | ----------- |
+| `code`     | `code`     | The code to display.            | `string`              | `undefined` |
+| `language` | `language` | The language of the code block. | `string \| undefined` | `undefined` |
 
 
 ----------------------------------------------

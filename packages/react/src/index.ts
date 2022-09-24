@@ -3,9 +3,9 @@
 /* auto-generated react proxies */
 import { createReactComponent } from './react-component-lib';
 
-import type { JSX } from '@skyra/discord-components-core';
+import type { JSX } from '@derockdev/discord-components-core';
 
-import { defineCustomElements } from '@skyra/discord-components-core/loader';
+import { defineCustomElements } from '@derockdev/discord-components-core/loader';
 
 defineCustomElements();
 export const DiscordActionRow = /*@__PURE__*/createReactComponent<JSX.DiscordActionRow, HTMLDiscordActionRowElement>('discord-action-row');
@@ -21,6 +21,7 @@ export const DiscordEmbedDescription = /*@__PURE__*/createReactComponent<JSX.Dis
 export const DiscordEmbedField = /*@__PURE__*/createReactComponent<JSX.DiscordEmbedField, HTMLDiscordEmbedFieldElement>('discord-embed-field');
 export const DiscordEmbedFields = /*@__PURE__*/createReactComponent<JSX.DiscordEmbedFields, HTMLDiscordEmbedFieldsElement>('discord-embed-fields');
 export const DiscordEmbedFooter = /*@__PURE__*/createReactComponent<JSX.DiscordEmbedFooter, HTMLDiscordEmbedFooterElement>('discord-embed-footer');
+export const DiscordHeader = /*@__PURE__*/createReactComponent<JSX.DiscordHeader, HTMLDiscordHeaderElement>('discord-header');
 export const DiscordInlineCode = /*@__PURE__*/createReactComponent<JSX.DiscordInlineCode, HTMLDiscordInlineCodeElement>('discord-inline-code');
 export const DiscordInvite = /*@__PURE__*/createReactComponent<JSX.DiscordInvite, HTMLDiscordInviteElement>('discord-invite');
 export const DiscordItalic = /*@__PURE__*/createReactComponent<JSX.DiscordItalic, HTMLDiscordItalicElement>('discord-italic');

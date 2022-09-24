@@ -1,15 +1,15 @@
 {
-	"name": "@skyra/discord-components-core",
+	"name": "@derockdev/discord-components-core",
 	"version": "3.4.1",
 	"description": "Web components to easily build and display fake Discord messages on your webpages.",
-	"author": "@skyra",
+	"author": "@derock",
 	"license": "MIT",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.js",
 	"es2015": "dist/esm/index.js",
 	"es2017": "dist/esm/index.js",
 	"types": "dist/types/index.d.ts",
-	"unpkg": "dist/skyra-discord-components-core/skyra-discord-components-core.esm.js",
+	"unpkg": "dist/derock-discord-components-core/derock-discord-components-core.esm.js",
 	"collection:main": "dist/collection/index.js",
 	"collection": "dist/collection/collection-manifest.json",
 	"exports": {
@@ -31,12 +31,12 @@
 	"sideEffects": [
 		"./loader/index.js",
 		"./loader/index.cjs.js",
-		"./dist/skyra-discord-components-core/p-*",
-		"**/*skyra-discord-components-core*.js",
+		"./dist/derock-discord-components-core/p-*",
+		"**/*derock-discord-components-core*.js",
 		"./dist/esm/loader.js",
 		"./dist/esm/polyfills/*"
 	],
-	"homepage": "https://github.com/skyra-project/discord-components/tree/main/packages/core#readme",
+	"homepage": "https://github.com/itzderock/discord-components/tree/main/packages/core#readme",
 	"scripts": {
 		"build": "stencil build --docs && replace-in-file --configFile=scripts/replaceImportInPolyfills.cjs",
 		"start": "stencil build --dev --watch --serve",
@@ -63,10 +63,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/skyra-project/discord-components.git"
+		"url": "git+https://github.com/itzderock/discord-components.git"
 	},
 	"bugs": {
-		"url": "https://github.com/skyra-project/discord-components/issues"
+		"url": "https://github.com/itzderock/discord-components/issues"
 	},
 	"keywords": [
 		"skyra",
@@ -81,6 +81,7 @@
 	],
 	"devDependencies": {
 		"@sapphire/ts-config": "^3.3.4",
+		"replace-in-file": "^6.3.5",
 		"tslib": "^2.4.0"
 	}
 }

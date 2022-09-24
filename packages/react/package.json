@@ -1,8 +1,8 @@
 {
-	"name": "@skyra/discord-components-react",
+	"name": "@derockdev/discord-components-react",
 	"version": "3.4.1",
-	"description": "React bindings for @skyra/discord-components-core",
-	"author": "@skyra",
+	"description": "React bindings for @derockdev/discord-components-core",
+	"author": "@derockdev",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -15,13 +15,13 @@
 		"./dist/index.mjs",
 		"./dist/index.js"
 	],
-	"homepage": "https://github.com/skyra-project/discord-components/tree/main/packages/react#readme",
+	"homepage": "https://github.com/itzderock/discord-components/tree/main/packages/react#readme",
 	"scripts": {
 		"clean": "node scripts/clean.mjs",
-		"build": "yarn clean && tsc && gen-esm-wrapper dist/index.js dist/index.mjs && replace-in-file --configFile=scripts/replaceDefaultMod.cjs"
+		"build": "pnpm clean && tsc && gen-esm-wrapper dist/index.js dist/index.mjs && replace-in-file --configFile=scripts/replaceDefaultMod.cjs"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^3.4.1",
+		"@derockdev/discord-components-core": "^3.4.1",
 		"tslib": "^2.4.0"
 	},
 	"peerDependencies": {
@@ -59,5 +59,9 @@
 		"webcomponents",
 		"stencil",
 		"react"
-	]
+	],
+	"devDependencies": {
+		"gen-esm-wrapper": "^1.1.3",
+		"replace-in-file": "^6.3.5"
+	}
 }
