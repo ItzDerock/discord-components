@@ -31,6 +31,12 @@ export class DiscordCustomEmoji implements ComponentInterface {
 	@Prop({ mutable: true })
 	public embedEmoji: boolean;
 
+	/**
+	 * The emoji size
+	 */
+	@Prop()
+	public largeEmoji = false;
+
 	public componentWillRender() {
 		if (!this.url && Boolean(this.name)) {
 			const emojiFromGlobal = getGlobalEmojiUrl(this.name);
@@ -45,7 +51,11 @@ export class DiscordCustomEmoji implements ComponentInterface {
 	public render() {
 		const name = `:${this.name}:`;
 		const emojiClassName = this.embedEmoji ? 'discord-embed-custom-emoji' : 'discord-custom-emoji';
-		const emojiImageClassName = this.embedEmoji ? 'discord-embed-custom-emoji-image' : 'discord-custom-emoji-image';
+		let emojiImageClassName = this.embedEmoji ? 'discord-embed-custom-emoji-image' : 'discord-custom-emoji-image';
+
+		if (this.largeEmoji) {
+			emojiImageClassName += ' discord-custom-emoji-image-large';
+		}
 
 		return (
 			<span class={emojiClassName}>

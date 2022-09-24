@@ -102,6 +102,10 @@ export namespace Components {
          */
         "embedEmoji": boolean;
         /**
+          * The emoji size
+         */
+        "largeEmoji": boolean;
+        /**
           * The name of the emoji
          */
         "name": string;
@@ -822,6 +826,10 @@ declare namespace LocalJSX {
           * Determines whether or not the emoji is used in an embed, or a message. If it is used in an embed, the sizing is adjusted accordingly.
          */
         "embedEmoji"?: boolean;
+        /**
+          * The emoji size
+         */
+        "largeEmoji"?: boolean;
         /**
           * The name of the emoji
          */
