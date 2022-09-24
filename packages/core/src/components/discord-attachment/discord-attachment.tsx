@@ -85,6 +85,7 @@ export class DiscordAttachment implements ComponentInterface {
 				);
 
 			case DiscordAttachmentType.FILE:
+			default:
 				return (
 					<Host class="discord-attachment-generic">
 						<div class="discord-attachment-generic-icon">
