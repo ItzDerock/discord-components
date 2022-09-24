@@ -1,3 +1,15 @@
+# `Discord Components`
+A fork of [@skyra-project/discord-components](https://github.com/skyra-project/discord-components) designed for use in [discord-html-transcripts](https://github.com/itzderock/discord-html-transcripts)
+
+## Changes
+- Adds `<discord-code-block>`
+- Adds `<discord-header>`
+- Adds better support in `<discord-attachment>`
+	- Adds support for generic attachments, videos, and audio
+(changes also reflected in the react bindings)
+
+## Original README:
+
 <div align="center">
 
 # Discord Components
