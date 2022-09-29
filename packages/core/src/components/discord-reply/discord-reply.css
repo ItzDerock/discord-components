@@ -118,6 +118,7 @@
 	text-overflow: ellipsis;
 	user-select: none;
 	cursor: pointer;
+	overflow-x: hidden;
 }
 
 .discord-replied-message .discord-replied-message-content:hover {
