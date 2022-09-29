@@ -506,6 +506,14 @@ export namespace Components {
         "verified": boolean;
     }
     interface DiscordTime {
+        /**
+          * The format for the time.
+         */
+        "format": 't' | 'T' | 'f' | 'F' | 'd' | 'D' | 'R';
+        /**
+          * The time to display.
+         */
+        "timestamp": number;
     }
     interface DiscordUnderlined {
     }
@@ -1231,6 +1239,14 @@ declare namespace LocalJSX {
         "verified"?: boolean;
     }
     interface DiscordTime {
+        /**
+          * The format for the time.
+         */
+        "format"?: 't' | 'T' | 'f' | 'F' | 'd' | 'D' | 'R';
+        /**
+          * The time to display.
+         */
+        "timestamp"?: number;
     }
     interface DiscordUnderlined {
     }
