@@ -31,5 +31,9 @@
   background-color: #202225;
 }
 
+code.hljs {
+  padding: unset !important;
+}
+
 /* I dont know what theme discord uses, but i thought this was close enough */
 @import '~highlight.js/styles/base16/helios.css';
