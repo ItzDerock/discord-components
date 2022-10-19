@@ -19,12 +19,12 @@ export class DiscordCodeBlock implements ComponentInterface {
 	public code: string;
 
 	public render() {
+		// check if hljs has the language
+		const language = this.language ? (hljs.getLanguage(this.language) ? this.language : 'plaintext') : 'plaintext';
+
 		return (
 			<Host class="discord-code-block-pre discord-code-block-pre--multiline language">
-				<code
-					class={this.language ? `hljs language-${this.language}` : 'hljs'}
-					innerHTML={this.language ? hljs.highlight(this.code, { language: this.language }).value : hljs.highlightAuto(this.code).value}
-				/>
+				<code class={`hljs language-${language}`} innerHTML={hljs.highlight(this.code, { language }).value} />
 			</Host>
 		);
 	}
