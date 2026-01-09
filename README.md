@@ -2,6 +2,9 @@
 
 A fork of [@skyra-project/discord-components](https://github.com/skyra-project/discord-components) designed for use in [discord-html-transcripts](https://github.com/itzderock/discord-html-transcripts)
 
+> [!CAUTION]
+> discord-html-transcripts has moved to upstream skyra discord-components, so this fork will no longer be maintained.
+
 ## Changes
 
 -   Adds `<discord-code-block>`
